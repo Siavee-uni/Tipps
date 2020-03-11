@@ -1,5 +1,3 @@
-<?php
-
 //Replace simplexml_load_string
 
 $replace = array("  "," ","_",".");
