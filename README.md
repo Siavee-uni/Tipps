@@ -1,4 +1,4 @@
-//Replace simplexml_load_string
+    //Replace simplexml_load_string
 
 $replace = array("  "," ","_",".");
 $vCardUrl = $_SERVER['HTTP_ORIGIN'] . '/signatur/v-cards/' . str_replace($replace,"-",strtolower($pFirstName)) . '-' . strtolower($pName) .'.vcf';
