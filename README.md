@@ -7,7 +7,7 @@
 
     echo '<pre>' . print_r(str_replace($replace,"-",strtolower($pFirstName)), true) . '</pre>';
 
-h1 Deploy Laravel to sharedhosting via SSH
+Deploy Laravel to sharedhosting via SSH
 
 1. install composer if not isntalled 
 ```
@@ -23,4 +23,4 @@ echo export PATH="$PATH:/mybin" > ~/.profile
 3. composer install
 4. cp .env.example .env
 5. .env db connection einrichten
-6.  ßphp artisan key:gen
+6.  php artisan key:gen
