@@ -1,0 +1,9 @@
+let result = await fetch("www.3225r.de, {
+  method: "post",
+  mode: "no-cors",
+  header {
+      "accept":application/json",
+      "Content-type": "application/json",
+      }
+  body:
+  });
