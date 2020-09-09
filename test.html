@@ -1,0 +1,56 @@
+<body>
+    <form class="form">
+        <button type="button">click me</button>
+    </form>
+    <form class="form">
+        <button type="button">click me</button>
+    </form>
+    <form class="form">
+        <button type="button">click me</button>
+    </form>
+    <form class="form">
+        <button type="button">click me</button>
+    </form>
+    <form class="form">
+        <button type="button">click me</button>
+    </form>
+</body>
+<style>
+    .form {
+        background-color: black;
+    }
+
+    .form button {
+        height: 20px;
+    }
+</style>
+
+<script>
+    /*  window.onload = function () {
+        const allFormElements = document.querySelectorAll("body .form");
+
+        allFormElements.forEach((item) => {
+            item.addEventListener("click", () => {
+                if (item.style.backgroundColor == "red") {
+                    item.style.backgroundColor = "black";
+                } else {
+                    item.style.backgroundColor = "red";
+                }
+            });
+        });
+    }; */
+    // alternative
+
+    window.onclick = (e) => {
+        var element = e.target.parentElement;
+        if (element.className == "form") {
+            var color = element.style.backgroundColor;
+
+            if (color != "red") {
+                element.style.backgroundColor = "red";
+            } else {
+                element.style.backgroundColor = "black";
+            }
+        }
+    };
+</script>
