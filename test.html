@@ -41,15 +41,26 @@
     }; */
     // alternative
 
-    window.onclick = (e) => {
-        var element = e.target.parentElement;
-        if (element.className == "form") {
-            var color = element.style.backgroundColor;
-
+  window.onclick = (e) => {
+        var ParentElement = e.target.parentElement;
+        var element = e.target;
+        console.log(element.nodeName);
+        // button
+        if (ParentElement.className == "form" && element.nodeName == "BUTTON") {
+            var color = ParentElement.style.backgroundColor;
             if (color != "red") {
-                element.style.backgroundColor = "red";
+                ParentElement.style.backgroundColor = "red";
             } else {
-                element.style.backgroundColor = "black";
+                ParentElement.style.backgroundColor = "black";
+            }
+        }
+        //select
+        if (ParentElement.className == "form" && element.nodeName == "SELECT") {
+            if (element.value == "saab"){
+                ParentElement.style.backgroundColor = "blue";
+            }
+            if (element.value == "mercedes"){
+                ParentElement.style.backgroundColor = "green";
             }
         }
     };
