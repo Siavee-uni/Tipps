@@ -1,0 +1,4 @@
+git reflog
+// for windows use '' around Head. And select the commit u want to reset to
+git reset 'HEAD@{6}'
+git checkout -- .  // to restore all unstached files
